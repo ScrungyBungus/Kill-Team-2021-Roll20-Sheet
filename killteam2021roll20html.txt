@@ -1,0 +1,269 @@
+<div>
+    <thread>
+        <th>Faction Dataslate?</th>
+    </thread>
+  <input type="checkbox" class="sheet-block-switch" name="attr_block_switch" value="1">
+  <div class="sheet-block-a">
+    <h2>Character Datacard</h2>
+<table id="character">
+  <thead>
+    <th>Character Name</th>
+    <th>Faction</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" class="wide" name="attr_name" /></td>
+      <td><input type="text" class="wide" name="attr_faction" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="unit">
+  <thead>
+    <th>Unit Name</th>
+    <th>Move</th>
+    <th>APL</th>
+    <th>GA</th>
+    <th>DF</th>
+    <th>SV</th>
+    <th>W</th>
+    <th>Base</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" class="wide" name="attr_unitname" /></td>
+      <td><input type="text" class="narrow" name="attr_move" /></td>
+      <td><input type="text" class="narrow" name="attr_actionpoints" /></td>
+      <td><input type="text" class="narrow" name="attr_groupactivation" /></td>
+      <td><input type="text" class="narrow" name="attr_defense"/></td>
+      <td><input type="text" class="narrow" name="attr_saves"/></td>
+      <td><input type="text" class="narrow" name="attr_wounds"/></td>
+      <td><input type="text" class="narrow" name="attr_basewidth"/></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Weapons</h3>
+<fieldset class="repeating_weapon">
+<table id="Weapon">
+  <thead>
+    <th>Melee?</th>
+    <th>Weapon Name</th>
+    <th>Attacks</th>
+    <th>BS/WS</th>
+    <th>Damage</th>
+    <th>Special Rules</th>
+    <th>Critical Effects</th>
+  </thead>
+  <tbody>
+      <tr class="repeating_weapon">
+        <td><input type="checkbox" name="attr_melee"/></td>
+        <td><input type="text" class="wide" name="attr_weaponname"/></td>
+        <td><input type="text" class="narrow" name="attr_attacks" /></td>
+        <td><input type="text" class="narrow" name="attr_skill" /></td>
+        <td><input type="text" class="narrow" name="attr_damage" /></td>
+        <td><input type="text" class="wide" name="attr_specialrules" /></td>
+        <td><input type="text" class="wide" name="attr_criticaleffects" /></td>
+      </tr>
+  </tbody>
+</table>
+</fieldset>
+
+<table id="equipment" class="wide">
+  <thead>
+    <th>Equipment</th>
+    <th>Rare Equipment</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <fieldset class="repeating_equipment">
+          <textarea name="attr_equipment"></textarea>
+        </fieldset>
+      </td>
+      <td>
+        <fieldset class="repeating_rareequipment">
+          <textarea name="attr_rareequipment"></textarea>
+        </fieldset>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="abilitiesAndActions" class="wide">
+  <thead>
+    <th>Abilities</th>
+    <th>Unique Actions</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <fieldset class="repeating_ability">
+          <textarea name="attr_abilities"></textarea>
+        </fieldset>
+      </td>
+      <td>
+        <fieldset class="repeating_actions">
+          <textarea name="attr_uniqueactions"></textarea>
+        </fieldset>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="keywordsAndSpecialisms">
+  <thead>
+    <th>Keywords</th>
+    <th>Possible Specialisms:</th>
+    <th>Combat</th>
+    <th>Staunch</th>
+    <th>Marksman</th>
+    <th>Scout</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          <textarea class="extralarge" name="attr_keywords"></textarea>
+      </td>
+      <td>
+          <input type="hidden" name="attr_empty"/>
+      </td>
+      <td>
+          <input type="checkbox" name="attr_combat"/>
+      </td>
+      <td>
+          <input type="checkbox" name="attr_staunch"/>
+      </td>
+      <td>
+          <input type="checkbox" name="attr_marksman"/>
+      </td>
+      <td>
+          <input type="checkbox" name="attr_scout"/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Narrative Info</h2>
+
+<table id="character">
+  <thead>
+    <th>Experience</th>
+    <th>Rank</th>
+    <th>Specialism</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" class="wide" name="attr_xp" /></td>
+      <td><input type="text" class="wide" name="attr_Rank" /></td>
+      <td><input type="text" class="wide" name="attr_specialism" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="Battle Honors" class="wide">
+  <thead>
+    <th>Battle Honors</th>
+    <th>Battle Scars</th>
+    <th>Rested Tally</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <fieldset class="repeating_battlehonors">
+          <textarea name="attr_battlehonors"></textarea>
+        </fieldset>
+      </td>
+      <td>
+        <fieldset class="repeating_battlescars">
+          <textarea name="attr_battlescars"></textarea>
+        </fieldset>
+      </td>
+      <td><input type="text" class="narrow" name="attr_move" /></td>
+    </tr>
+  </tbody>
+</table>
+   <td><input type="range" name="attr_doodad"></td>
+  </div>
+  <div class="sheet-block-b">
+  <h2>Faction Dataslate</h2>
+<table id="faction">
+  <thead>
+    <th>Kill Team Name</th>
+    <th>Player Name</th>
+    <th>Faction Keyword</th>
+    <th>Selectable Keyword</th>
+    <th>Base of Operations</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" class="wide" name="attr_killteamname" /></td>
+      <td><input type="text" class="wide" name="attr_player" /></td>
+      <td><input type="text" class="wide" name="attr_factionkeyword" /></td>
+      <td><input type="text" class="wide" name="attr_selectablekeyword" /></td>
+      <td><input type="text" class="wide" name="attr_baseofoperations" /></td>
+    </tr>
+  </tbody>
+</table>
+<table id="historyandquirks" class="wide">
+  <thead>
+    <th>History</th>
+    <th>Quirks</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          <textarea name="attr_history"></textarea>
+      </td>
+      <td>
+          <textarea name="attr_quirks"></textarea>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table id="stashandpoints" class="wide">
+  <thead>
+    <th>Requisition Points</th>
+    <th>Asset Capacity</th>
+    <th>Stash</th>
+    <th>Strategic Assets</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" class="narrow" name="attr_requisitionpoints" /></td>
+      <td><input type="text" class="narrow" name="attr_assetcapacity" /></td>
+      <td>
+          <textarea name="attr_stash"></textarea>
+      </td>
+      <td>
+          <textarea name="attr_strategicassets"></textarea>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table id="notes" class="wide">
+  <thead>
+    <th>Notes</th>
+    <th>Spec Op 1</th>
+    <th>Spec Op 2</th>
+    <th>Spec Op 3</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          <textarea name="attr_notes"></textarea>
+      </td>
+      <td>
+          <textarea name="attr_specop1"></textarea>
+      </td>
+      <td>
+          <textarea name="attr_specop2"></textarea>
+      </td>
+      <td>
+          <textarea name="attr_specop2"></textarea>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>

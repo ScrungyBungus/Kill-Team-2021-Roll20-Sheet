@@ -1,0 +1,49 @@
+  table {
+    margin: 15px 0;
+  }
+
+  thead {
+    background-color: goldenrod;
+  }
+
+  input.sheet-narrow {
+    width: 50px;
+  }
+
+  input.sheet-expand {
+    width: 100%;
+  }
+
+  table.sheet-wide {
+    width: 100%;
+  }
+
+  textarea.sheet-extralarge {
+    width: 600px;
+  }
+
+  textarea {
+    width: 90%;
+    height: 90%;
+    resize: vertical;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  th, td {
+      padding: 0 5px;
+  }
+  
+  .sheet-block-a,
+.charsheet .sheet-block-switch:checked ~ .sheet-block-b {
+  display: block;
+}
+
+.charsheet .sheet-block-b,
+.charsheet .sheet-block-switch:checked ~ .sheet-block-a {
+  display: none;
+}
